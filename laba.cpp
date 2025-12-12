@@ -26,16 +26,19 @@ int main() {
   "May", "June", "July", "August",
   "September", "October", "November", "December"
   };
+  string nameOfDay[] = {
+  "mon", "tue", "wed", "thu", "fri", "sat", "sun"
+  };
   
   int days [] = {
   31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
   
   if (leapYear) {
-      days[1] = 29;
+    days[1] = 29;
   }
   for (int month = 0; month < 12; ++month){
     cout << "----------" << months[month] << "----------" << "\n";
-    
+    cout << nameOfDay[0] << nameOfDay[1]  << nameOfDay[2];
     for (int dayIndex = 1; dayIndex <= days[month]; ++dayIndex) {
       cout << dayIndex << " ";
       
